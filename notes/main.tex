@@ -35,25 +35,30 @@
 \newpage
 
 \section{Introduction}
-Write your introduction here.
+This course is about introduction to Neural Networks and
+it has a more hands on appraoch to the material. Each day two lectures are being held.
+At the end of each day there is practical session to practice the material in the course.
 
 \section{Neural Networks}
 
 \subsection{Perceptron}
-The perceptron is a simple linear classifier...
+The perceptron is a simple linear classifier. It maps inputs to outputs. To increase its capabilities we 
+introduce a nonlinear function that acts upon the output of the normal perceptron. We call these nonlinear functions, Activation Functions.
+There are many different activation functions that can we can use. Good activation functions should be fast to compute and easy to deriviate 
+and also it should be numerically stable.
 
 \subsection{Activation Functions}
 Some common activation functions are:
 \begin{itemize}
-    \item Sigmoid: $\sigma(x) = \frac{1}{1+e^{-x}}$
-    \item ReLU: $ReLU(x) = \max(0, x)$
-    \item Softmax: $\sigma(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$
+  \item Sigmoid: $\sigma(x) = \frac{1}{1+e^{-x}}$
+  \item ReLU: $ReLU(x) = \max(0, x)$
+  \item Softmax: $\sigma(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$
 \end{itemize}
 
 \section{Optimization Algorithms}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Gradient Descent]
-Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the negative gradient.
+  Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the negative gradient.
 \end{tcolorbox}
 
 \section{Backpropagation}
