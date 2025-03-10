@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+
+% Packages
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+
+% Custom Theorem Styles
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+% Custom Commands
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+
+% Title Information
+\title{Deep Learning Notes}
+\author{Amir Nourinia}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+Write your introduction here.
+
+\section{Neural Networks}
+
+\subsection{Perceptron}
+The perceptron is a simple linear classifier...
+
+\subsection{Activation Functions}
+Some common activation functions are:
+\begin{itemize}
+    \item Sigmoid: $\sigma(x) = \frac{1}{1+e^{-x}}$
+    \item ReLU: $ReLU(x) = \max(0, x)$
+    \item Softmax: $\sigma(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$
+\end{itemize}
+
+\section{Optimization Algorithms}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Gradient Descent]
+Gradient descent is an optimization algorithm used to minimize a function by iteratively moving in the direction of the negative gradient.
+\end{tcolorbox}
+
+\section{Backpropagation}
+Explain backpropagation here.
+
+\end{document}
