@@ -14,7 +14,6 @@ class SingleLayer(Module):
         nn.linear(n,2)
     )
     """
-    
 
     def __init__(self, input_dim: int, hidden_dim: int, output_dim: int):
         super().__init__()
