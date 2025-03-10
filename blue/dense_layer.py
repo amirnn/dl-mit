@@ -1,12 +1,11 @@
 """A densely connected neural netowrk"""
 
 import torch
-from torch import nn
+from torch.nn import Module
 from torch.nn import Parameter
 from torch import Tensor
 
-
-class DenseLayer(nn.Module):
+class DenseLayer(Module):
     """A densely connected neural netowrk
     Equavilant to torch.nn.Linear(in_features=m, out_features=2)
     Args:
