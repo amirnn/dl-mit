@@ -6,7 +6,15 @@ from blue.dense_layer import DenseLayer
 
 
 class SingleLayer(Module):
-    """A single (hiddn) layer NN"""
+    """A single (hiddn) layer NN
+    equavilant to:
+    model = nn.Sequential(
+        nn.Linear(m,n),
+        nn.ReLU(),
+        nn.linear(n,2)
+    )
+    """
+    
 
     def __init__(self, input_dim: int, hidden_dim: int, output_dim: int):
         super().__init__()
