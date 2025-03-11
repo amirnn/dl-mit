@@ -54,7 +54,7 @@ To increase its capabilities, we introduce a nonlinear function that acts on the
 These nonlinear functions, called \textbf{activation functions}, help introduce complexity and allow neural
 networks to model more sophisticated patterns.
 \subsubsection{Perceptron's implementation}
-\inputminted[frame=lines, fontsize=\tiny, linenos]{python}{../../blue/layers/dense_layer.py}
+\inputminted[frame=lines, fontsize=\scriptsize, linenos]{python}{../../blue/layers/dense_layer.py}
 
 \subsection{Activation Functions}
 Some common activation functions are:
@@ -71,7 +71,7 @@ A good activation function should be:
 \end{itemize}
 
 \subsubsection{Activation Functions' implementation}
-\inputminted[frame=lines, fontsize=\tiny, linenos]{python}{../../blue/activation_functions/activation_functions.py}
+\inputminted[frame=lines, fontsize=\scriptsize, linenos]{python}{../../blue/activation_functions/activation_functions.py}
 
 \section{Training Neural Networks}
 
@@ -103,6 +103,11 @@ errors backward from the output layer to the input layer.
 \subsection{Learning Rate}
 The learning rate controls the step size of weight updates. Choosing an appropriate learning rate is 
 crucial to ensure convergence and avoid divergence.
+
+\subsection{Regularization}
+Generalization
+
+\subsubsection{Dropout}
 
 \section{References}
 \begin{enumerate}
