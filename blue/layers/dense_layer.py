@@ -1,5 +1,4 @@
 """A densely connected neural netowrk"""
-
 import torch
 from torch.nn import Module
 from torch.nn import Parameter
@@ -12,16 +11,13 @@ class DenseLayer(Module):
         input_dim: #inputs
         output_dim: #out_puts
     """
-
     def __init__(self, input_dim: int, output_dim: int):
         """Init method
-
         Args:
             input_dim (int): _description_
             output_dim (int): _description_
         """
         super().__init__()
-
         # initialize weight and bias
         self.weights: Parameter = Parameter(
             torch.randn(input_dim, output_dim, requires_grad=True)
@@ -30,15 +26,12 @@ class DenseLayer(Module):
 
     def forward(self, inputs: Tensor) -> Tensor:
         """The Forward path of the network
-
         Args:
             inputs (Tensor): _description_
-
         Returns:
             Tensor: result of the transform
         """
         # Forward propagate the inputs
         z: Tensor = torch.matmul(inputs, self.weights) + self.b
-
         output: Tensor = torch.sigmoid(z)
         return output

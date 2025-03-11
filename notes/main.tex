@@ -10,6 +10,7 @@
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{geometry}
+\usepackage{minted}
 \geometry{margin=1in}
 
 % Custom Theorem Styles
@@ -52,6 +53,8 @@ A perceptron is a simple linear classifier that maps inputs to outputs.
 To increase its capabilities, we introduce a nonlinear function that acts on the perceptron's output.
 These nonlinear functions, called \textbf{activation functions}, help introduce complexity and allow neural
 networks to model more sophisticated patterns.
+\subsubsection{Perceptron's implementation}
+\inputminted[frame=lines, fontsize=\tiny, linenos]{python}{../../blue/layers/dense_layer.py}
 
 \subsection{Activation Functions}
 Some common activation functions are:
@@ -66,6 +69,9 @@ A good activation function should be:
   \item Easy to differentiate
   \item Numerically stable
 \end{itemize}
+
+\subsubsection{Activation Functions' implementation}
+\inputminted[frame=lines, fontsize=\tiny, linenos]{python}{../../blue/activation_functions/activation_functions.py}
 
 \section{Training Neural Networks}
 

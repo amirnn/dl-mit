@@ -2,7 +2,7 @@
 
 from torch.nn import Module
 from torch import Tensor
-from blue.dense_layer import DenseLayer
+from blue.layers.dense_layer import DenseLayer
 
 
 class SingleLayer(Module):
