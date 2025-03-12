@@ -6,7 +6,8 @@ This repository contains notes and implementations following along with the MIT 
 
 ## File Structure
 
-- **`blue/`** - Contains code implementations related to the course.
+- **`blue/`** - Contains python front-end code implementations related to the course.
+- **`blue-cpp/`** - Contains C++ front-end code implementations related to the course.
 - **`notes/`** - LaTeX-based notes for each topic covered in the course.
 - **`reader/`** - Lecture slides for reference.
 

@@ -6,6 +6,7 @@ export module Layer:Dense;
 
 export namespace blue {
     class Dense : torch::nn::Module {
+
         
     };
 }
