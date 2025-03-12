@@ -1,0 +1,11 @@
+#platform
+.DS_Store
+
+# IDEs
+.vscode
+.idea
+
+# build
+/build/
+/out/
+/.cache/
