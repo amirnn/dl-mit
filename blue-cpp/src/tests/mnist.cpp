@@ -7,7 +7,7 @@ int main() {
   // Create a new Net.
   auto net = std::make_shared<blue::Single>(12, 32, 6);
 
-  // Create a multi-threaded data loader for the MNIST dataset.
+  // Create a multithreaded data loader for the MNIST dataset.
   auto data_loader =
       torch::data::make_data_loader(torch::data::datasets::MNIST("./data").map(
                                         torch::data::transforms::Stack<>()),
