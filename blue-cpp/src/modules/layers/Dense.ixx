@@ -6,6 +6,7 @@ export module Layer:Dense;
 
 export namespace blue {
 class Dense final : torch::nn::Module {
+public:
   Dense() {
     // Construct and register two Linear submodules.
     fc1 = register_module("fc1", torch::nn::Linear(784, 64));
@@ -26,4 +27,4 @@ class Dense final : torch::nn::Module {
   torch::nn::Linear fc2{nullptr};
   torch::nn::Linear fc3{nullptr};
 };
-} // namespace blue
+}  // namespace blue
