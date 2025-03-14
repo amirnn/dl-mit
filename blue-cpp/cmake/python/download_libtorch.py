@@ -17,21 +17,29 @@ except ImportError:
 
 Resources: dict[str, tuple[str]] = {
     "Linux": (
-        "https://download.pytorch.org/libtorch/cu126/libtorch-cxx11-abi-shared-with-deps-2.6.0%2Bcu126.zip",
+        # https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-2.6.0%2Bcpu.zip, # wo CUDA
+        "https://download.pytorch.org/libtorch/cu126/libtorch-cxx11-abi-shared-with-deps-2.6.0%2Bcu126.zip", # CUDA
     ),
     "Darwin": (
         "https://download.pytorch.org/libtorch/cpu/libtorch-macos-arm64-2.6.0.zip",
     ),
     "Windows": (
-        "https://download.pytorch.org/libtorch/cu126/libtorch-win-shared-with-deps-2.6.0%2Bcu126.zip",
-        "https://download.pytorch.org/libtorch/cu126/libtorch-win-shared-with-deps-debug-2.6.0%2Bcu126.zip",
+        # https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-2.6.0%2Bcpu.zip, # wo CUDA
+        # https://download.pytorch.org/libtorch/cpu/libtorch-win-shared-with-deps-debug-2.6.0%2Bcpu.zip, # wo CUDA
+        "https://download.pytorch.org/libtorch/cu126/libtorch-win-shared-with-deps-2.6.0%2Bcu126.zip", # CUDA
+        "https://download.pytorch.org/libtorch/cu126/libtorch-win-shared-with-deps-debug-2.6.0%2Bcu126.zip", # CUDA
     ),
 }
 
 Items: dict[str, tuple[str]] = {
-    "Linux": ("libtorch-cxx11-abi-shared-with-deps-2.6.0+cu126.zip",),
+    "Linux": (
+        # "libtorch-cxx11-abi-shared-with-deps-2.6.0+cpu.zip", # wo CUDA
+        "libtorch-cxx11-abi-shared-with-deps-2.6.0+cu126.zip", # CUDA
+        ),
     "Darwin": ("libtorch-macos-arm64-2.6.0.zip",),
     "Windows": (
+        # "libtorch-win-shared-with-deps-2.6.0+cpu.zip", # wo CUDA
+        # "libtorch-win-shared-with-deps-debug-2.6.0+cpu.zip", # wo CUDA
         "libtorch-win-shared-with-deps-2.6.0+cu126.zip",
         "libtorch-win-shared-with-deps-debug-2.6.0+cu126.zip",
     ),
