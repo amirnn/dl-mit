@@ -177,3 +177,8 @@ cython_debug/
 # IDEs
 .idea
 .vscode
+# Build
+.cache
+compile_commands.json
+out
+build
